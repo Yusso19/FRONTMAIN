@@ -3,26 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WARNING</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Общие стили для страницы */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Bebas Neue", sans-serif;
+            background-color: #f4f4f4; /* Светлый фон */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Высота экрана */
+            text-align: center;
+        }
+
+        /* Стили для логотипа */
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px; /* Высота контейнера для логотипа */
+            animation: fadeIn 1.5s ease-in-out; /* Анимация появления */
+        }
+
+        .fa-biohazard {
+            font-size: 200px; /* Увеличенный размер логотипа */
+            color: #000; /* Чёрный цвет логотипа */
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Тень для логотипа */
+            transition: transform 0.3s ease, color 0.3s ease; /* Анимация при наведении */
+        }
+
+        .fa-biohazard:hover {
+            transform: scale(1.2); /* Увеличение логотипа при наведении */
+            color: #ff0000; /* Красный цвет при наведении */
+        }
+
+        /* Стили для текста */
+        p {
+            font-size: 64px; /* Увеличенный размер текста */
+            color: #ff0000; /* Красный цвет текста */
+            text-shadow: 2px 2px 4px #000; /* Чёрный контур для текста */
+            margin: 20px 0;
+            animation: fadeIn 2s ease-in-out; /* Анимация появления */
+        }
+
+        /* Анимация появления */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>CATs Site</h1>
-    <p>wiskas</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSD-UF0_9BVseuL_LU9Moo5W2dnjrAq01z5UKiBarRGJ_1YhZa2293GK450iDw137kx9U&usqp=CAU" alt="Kitty">
-
-<video  width="320" height="240" controls>
-  <source src="https://www.pexels.com/download/video/3116737/" type="video/mp4">
-  <source src="https://www.pexels.com/download/video/3116737/" type="video/ogg">
-Your browser does not support the video tag.
-
-
-</video>
-<audio controls>
-    <source src="https://cdn6.sefon.pro/prev/Ixc-2Ob31DdwqjIljnAaCA/1763084201/480/%D0%9D%D0%B8%D0%B7%D0%B0%D0%BC%20DRedd%20feat.%20MicFire%20-%20%D0%92%D0%BD%D0%B5%20%D0%9A%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D0%B8%20%28192kbps%29.mp3" type="audio/mp3">
-    <source src="https://cdn6.sefon.pro/prev/Ixc-2Ob31DdwqjIljnAaCA/1763084201/480/%D0%9D%D0%B8%D0%B7%D0%B0%D0%BC%20DRedd%20feat.%20MicFire%20-%20%D0%92%D0%BD%D0%B5%20%D0%9A%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D0%B8%20%28192kbps%29.ogg" type="audio/ogg">
-  Your browser does not support the audio element.
-  </audio>
-
-
+    <!-- Логотип -->
+    <div class="logo-container">
+        <i class="fa-solid fa-biohazard"></i>
+    </div>
+    
+    <!-- Текст -->
+    <p>THE WALKING DEAD</p>
 </body>
 </html>

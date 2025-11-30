@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Test</title>
+<link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <div id="startOverlay" class="overlay">
+    <div class="overlay-content">
+      <h2>Welcome to the Azerbaijan Quiz</h2>
+      <p>Try to answer all questions before the timer runs out.</p>
+      <button type="button" id="startBtn">Start</button>
+    </div>
+  </div>
+<div class="test-wrapper">
+  <div class="container">
+  <h1>Simple Test about Azerbaijan</h1>
+
+
+  <div id="timer">Time: 1:00</div>
+  <form id="testForm">
+
+      <div class="question">
+        <p>1. What is the capital of Azerbaijan?</p>
+        <label><input type="radio" name="q1" value="a"> Gence</label><br>
+        <label><input type="radio" name="q1" value="b"> Baku</label><br>
+        <label><input type="radio" name="q1" value="c"> Sumqayit</label>
+      </div>
+
+      <div class="question">
+        <p>2. What is the national currency of Azerbaijan?</p>
+        <label><input type="radio" name="q2" value="a"> Manat</label><br>
+        <label><input type="radio" name="q2" value="b"> Dollar</label><br>
+        <label><input type="radio" name="q2" value="c"> Euro</label>
+      </div>
+
+      <div class="question">
+        <p>3. Which sea borders Azerbaijan to the east?</p>
+        <label><input type="radio" name="q3" value="a"> Black Sea</label><br>
+        <label><input type="radio" name="q3" value="b"> Caspian Sea</label><br>
+        <label><input type="radio" name="q3" value="c"> Mediterranean Sea</label>
+      </div>
+
+      <div class="question">
+        <p>4. What is the official language of Azerbaijan?</p>
+        <label><input type="radio" name="q4" value="a"> Russian</label><br>
+        <label><input type="radio" name="q4" value="b"> Turkish</label><br>
+        <label><input type="radio" name="q4" value="c"> Azerbaijani</label>
+      </div>
+
+      <div class="question">
+        <p>5. Arrange the colors of the Azerbaijan flag top to bottom:</p>
+        <div class="flag-slots">
+          <div class="slot" data-color="blue"></div>
+          <div class="slot" data-color="red"></div>
+          <div class="slot" data-color="green"></div>
+        </div>
+        <div class="colors">
+          <div class="color" draggable="true" data-color="green" style="background-color: green;"></div>
+          <div class="color" draggable="true" data-color="blue" style="background-color: blue;"></div>
+          <div class="color" draggable="true" data-color="red" style="background-color: red;"></div>
+        </div>
+      </div>
+
+      <button type="button" id="finishBtn">Finish</button>
+    </form>
+    <div id="scoreModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <p id="scoreText"></p>
+    <button id="retryBtn">Retry</button>
+  </div>
+</div>
+
+    <div id="result"></div>
+  </div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
